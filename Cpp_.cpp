@@ -9,14 +9,15 @@
 #define HUI_MORJA 0x01010
 #define _WIN32_WINNT 0x0500
 
+/*
 
+My cheat for Dota 2
+
+*/
 
 using std::cout;
 
-
-
 HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-
 
 
 void GoToXY(short x, short y)
@@ -53,7 +54,6 @@ void position(short x, short y) {
 	keybd_event('9', 0, KEYEVENTF_KEYUP, 0);
 }
 
-
 // fun for switch colors on the main screen depending on where the cursor is
 void for_consol(char f1, short x, short y) {
 	std::string menu[2] = { "Redian", "Dair" };
@@ -70,7 +70,6 @@ void for_consol(char f1, short x, short y) {
 	GoToXY(x += 10, y);
 	cout << menu[1] << std::endl;
 }
-
 
 // fun for switch colors depending on where the cursor is
 void dair(short count, char ss = 0) {
@@ -107,7 +106,6 @@ void redian(short count, char ss = 0) {
 	GoToXY(8, 14);
 	cout << "<- beck ";
 }
-
 
 void R_D(bool tf) {
 	system("CLS");
@@ -201,7 +199,6 @@ void R_D(bool tf) {
 	count = 0;
 }
 
-
 void while_true() {
 	bool tf = false;
 	short x{ 8 }, y{ 12 };
@@ -239,8 +236,6 @@ void while_true() {
 	}
 }
 
-
-
 int main() {
 	std::ios::sync_with_stdio(false);
 	system("mode con cols=50 lines=30"); // размер консоли | size console
@@ -250,8 +245,6 @@ int main() {
 	short counter{ 0 };
 
 	while_true();
-
-
 }
 
 /*
