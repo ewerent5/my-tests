@@ -1,10 +1,5 @@
 // Dll for implementation in processes
 
-/*
-
-My injector
-
-*/
 #include <Windows.h>
 #include <iostream>
  
