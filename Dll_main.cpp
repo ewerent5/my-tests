@@ -1,4 +1,4 @@
-// Dll äëÿ âíèäðåíèÿ â ïðîöåññû | Dll for implementation in processes
+// Dll for implementation in processes
 
 /*
 
